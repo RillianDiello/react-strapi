@@ -1,4 +1,4 @@
-import { createGlobalStyle, css } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 export const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
@@ -6,9 +6,5 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  body {
-    ${({ theme }) => css`
-      background: ${theme.colors.mainBg};
-      `}
-  }
+  body { }
 `;
