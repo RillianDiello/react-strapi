@@ -20,4 +20,7 @@ export const theme = {
     },
   },
   spacings: {},
+  media: {
+    lteMedium: '(max-width: 768px)',
+  },
 };
