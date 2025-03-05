@@ -8,7 +8,6 @@ export default {
   },
   argTypes: {
     children: { type: 'string' },
-    light: { type: 'boolean' },
   },
   parameters: {
     backgrounds: {
@@ -19,6 +18,7 @@ export default {
 
 export const Light = (args) => <Heading {...args} />;
 export const Dark = (args) => <Heading {...args} />;
+
 Light.parameters = {
   backgrounds: {
     default: 'light',
