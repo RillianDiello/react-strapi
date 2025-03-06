@@ -3,14 +3,12 @@ import { render, screen } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 import { theme } from '../../styles/theme';
 import { Heading } from '.';
+import { renderTheme } from '../../styles/render-theme';
 
 describe('<Heading />', () => {
   it('should render with default values', () => {
-    render(
-      <ThemeProvider theme={theme}>
-        <Heading colorDark>text</Heading>
-      </ThemeProvider>,
-    );
+    renderTheme(<Heading colorDark>texto</Heading>);
+
     const heading = screen.getByRole('heading', { name: /text/i });
     expect(heading).toHaveStyle({
       color: theme.colors.primaryColor,
