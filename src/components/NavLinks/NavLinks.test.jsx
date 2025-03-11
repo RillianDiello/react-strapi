@@ -1,7 +1,6 @@
 import { screen } from '@testing-library/react';
 import { renderTheme } from '../../styles/render-theme';
 import { NavLinks } from '.';
-import { theme } from '../../styles/theme';
 
 import mock from './mock';
 
