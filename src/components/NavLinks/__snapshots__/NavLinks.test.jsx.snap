@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavLinks /> should match snapshot 1`] = `
+.c0 {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.c1 {
+  display: block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 1.6rem 8rem;
+  color: #0A1128;
+  position: relative;
+}
+
+.c1::after {
+  content: '';
+  position: absolute;
+  bottom: 0.76rem;
+  left: 50%;
+  width: 0;
+  height: 0.2rem;
+  background: #dc143c;
+  transition: all 300ms ease-in-out;
+}
+
+.c1:hover::after {
+  width: 25%;
+  left: 50%;
+}
+
+@media (max-width: 768px) {
+  .c0 {
+    flex-flow: column wrap;
+    align-content: center;
+  }
+}
+
+<nav
+  class="c0"
+>
+  <a
+    class="c1"
+    href="#target1"
+    target="_self"
+  >
+    <h1>
+      Link 1
+    </h1>
+  </a>
+  <a
+    class="c1"
+    href="#target2"
+    target="_self"
+  >
+    <h1>
+      Link 2
+    </h1>
+  </a>
+  <a
+    class="c1"
+    href="#target3"
+    target="_self"
+  >
+    <h1>
+      Link 3
+    </h1>
+  </a>
+</nav>
+`;

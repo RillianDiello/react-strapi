@@ -19,13 +19,12 @@ describe('<MenuLink />', () => {
     );
   });
   it('should render with newTab false', () => {
-    renderTheme(
+    const { container } = renderTheme(
       <MenuLink link="http//localhost" newTab={false}>
         Children
       </MenuLink>,
     );
-    expect(screen.getByRole('link', { name: 'Children' }))
-      .toMatchInlineSnapshot(`
+    expect(container.firstChild).toMatchInlineSnapshot(`
       .c0 {
         display: block;
         text-decoration: none;
@@ -38,7 +37,7 @@ describe('<MenuLink />', () => {
       .c0::after {
         content: '';
         position: absolute;
-        bottom: 0.75rem;
+        bottom: 0.76rem;
         left: 50%;
         width: 0;
         height: 0.2rem;
