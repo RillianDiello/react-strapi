@@ -1,44 +1,49 @@
 import styled, { css } from 'styled-components';
 import { Container as SectionContainer } from '../SectionContainer/styles';
-import { Container as HeadingContainer } from '../Heading/styles';
+import { Container as Heading } from '../Heading/styles';
 
 export const Container = styled.div`
   ${({ theme }) => css`
     position: fixed;
     z-index: 5;
     top: 0;
-    right: 0;
     left: 0;
-    bottom: 0;
+    right: 0;
     width: 100%;
-    height: 100%;
-    background: red;
-    border-bottom: ${theme.colors.mediumGray} 5px solid;
+    border-bottom: ${theme.colors.mediumGray};
     background: ${theme.colors.white};
+    transition: all 300ms ease-in-out;
+
     > ${SectionContainer} {
       padding-top: 0;
       padding-bottom: 0;
     }
-    & ${HeadingContainer} {
+
+    & ${Heading} {
       margin-top: 0;
       margin-bottom: 0;
     }
+
     @media ${theme.media.lteMedium} {
       height: 100vh;
-      > ${SectionContainer} {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
-      height: 100vr;
-      align-items: center;
-      overflow: auto;
-    }
-    & ${HeadingContainer} {
-      padding-bottom: ${theme.spacings.large};
-      display: flex;
-      justify-content: center;
-    }
+      visibility: hidden;
+      opacity: 0;
 
+      > ${SectionContainer} {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        height: 100vh;
+        align-items: center;
+        overflow-y: auto;
+      }
+
+      & ${Heading} {
+        padding-bottom: ${theme.spacings.large};
+        display: flex;
+        justify-content: center;
+      }
+    }
   `}
 `;
 
@@ -52,6 +57,7 @@ export const MenuContainer = styled.div`
       display: block;
       text-align: center;
       padding: ${theme.spacings.xxlarge} 0;
+    }
   `}
 `;
 
