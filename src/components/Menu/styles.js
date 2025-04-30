@@ -8,7 +8,9 @@ const menuVisible = () => css`
   transition: all 300ms ease-in-out;
   `;
 
-export const Container = styled.div`
+export const Container = styled.div.withConfig({
+  shouldForwardProp: (prop) => prop !== 'visible',
+})`
   ${({ theme, visible }) => css`
     position: fixed;
     z-index: 5;
@@ -68,7 +70,9 @@ export const MenuContainer = styled.div`
   `}
 `;
 
-export const ButtonContainer = styled.button`
+export const ButtonContainer = styled.button.withConfig({
+  shouldForwardProp: (prop) => prop !== 'visible',
+})`
   ${({ theme, visible }) => css`
     z-index: 6;
     position: fixed;

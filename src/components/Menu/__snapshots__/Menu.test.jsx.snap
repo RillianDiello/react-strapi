@@ -183,110 +183,108 @@ exports[`<Menu /> should render logo and Main Menu Nav 1`] = `
     <div
       class="c3 c4"
     >
-      <h1>
-        <div
-          class="c5"
+      <div
+        class="c5"
+      >
+        <h1
+          class="c6"
         >
-          <h1
-            class="c6"
+          <a
+            class="c7"
+            href="#target"
           >
-            <a
-              class="c7"
-              href="#target"
-            >
-              <span>
-                Logo
-              </span>
-            </a>
-          </h1>
-          <nav
-            aria-label="Main menu"
-            class="c8"
+            <span>
+              Logo
+            </span>
+          </a>
+        </h1>
+        <nav
+          aria-label="Main menu"
+          class="c8"
+        >
+          <a
+            class="c9"
+            href="#target1"
+            target="_self"
           >
-            <a
-              class="c9"
-              href="#target1"
-              target="_self"
-            >
-              <h1>
-                Link 1
-              </h1>
-            </a>
-            <a
-              class="c9"
-              href="#target2"
-              target="_self"
-            >
-              <h1>
-                Link 2
-              </h1>
-            </a>
-            <a
-              class="c9"
-              href="#target3"
-              target="_self"
-            >
-              <h1>
-                Link 3
-              </h1>
-            </a>
-            <a
-              class="c9"
-              href="#target4"
-              target="_self"
-            >
-              <h1>
-                Link 4
-              </h1>
-            </a>
-            <a
-              class="c9"
-              href="#target5"
-              target="_self"
-            >
-              <h1>
-                Link 5
-              </h1>
-            </a>
-            <a
-              class="c9"
-              href="#target6"
-              target="_self"
-            >
-              <h1>
-                Link 6
-              </h1>
-            </a>
-            <a
-              class="c9"
-              href="#target7"
-              target="_self"
-            >
-              <h1>
-                Link 7
-              </h1>
-            </a>
-            <a
-              class="c9"
-              href="#target8"
-              target="_self"
-            >
-              <h1>
-                Link 8
-              </h1>
-            </a>
-            <a
-              class="c9"
-              href="#target9"
-              target="_self"
-            >
-              <h1>
-                Link 9
-              </h1>
-            </a>
-          </nav>
-        </div>
-      </h1>
+            <h1>
+              Link 1
+            </h1>
+          </a>
+          <a
+            class="c9"
+            href="#target2"
+            target="_self"
+          >
+            <h1>
+              Link 2
+            </h1>
+          </a>
+          <a
+            class="c9"
+            href="#target3"
+            target="_self"
+          >
+            <h1>
+              Link 3
+            </h1>
+          </a>
+          <a
+            class="c9"
+            href="#target4"
+            target="_self"
+          >
+            <h1>
+              Link 4
+            </h1>
+          </a>
+          <a
+            class="c9"
+            href="#target5"
+            target="_self"
+          >
+            <h1>
+              Link 5
+            </h1>
+          </a>
+          <a
+            class="c9"
+            href="#target6"
+            target="_self"
+          >
+            <h1>
+              Link 6
+            </h1>
+          </a>
+          <a
+            class="c9"
+            href="#target7"
+            target="_self"
+          >
+            <h1>
+              Link 7
+            </h1>
+          </a>
+          <a
+            class="c9"
+            href="#target8"
+            target="_self"
+          >
+            <h1>
+              Link 8
+            </h1>
+          </a>
+          <a
+            class="c9"
+            href="#target9"
+            target="_self"
+          >
+            <h1>
+              Link 9
+            </h1>
+          </a>
+        </nav>
+      </div>
     </div>
   </div>
 </div>
