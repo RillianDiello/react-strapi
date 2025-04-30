@@ -1,20 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Menu /> should render 1`] = `
-.c2 {
+exports[`<Menu /> should render logo and Main Menu Nav 1`] = `
+.c4 {
   max-width: 320rem;
   margin: 0 auto;
   padding: 3.2rem;
   width: 100%;
 }
 
-.c4 {
+.c6 {
   color: #0A1128;
   font-size: 2.4rem;
   text-transform: uppercase;
 }
 
-.c0 {
+.c2 {
   position: fixed;
   z-index: 5;
   top: 0;
@@ -26,23 +26,43 @@ exports[`<Menu /> should render 1`] = `
   transition: all 300ms ease-in-out;
 }
 
-.c0 >.c1 {
+.c2 >.c3 {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-.c0 {
+.c2 {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.c3 {
+.c5 {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.c5 {
+.c0 {
+  z-index: 6;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  width: 4rem;
+  height: 1.5rem;
+  background: #0A1128;
+  color: #FFFFFF;
+  border: none;
+  pointer-events: all;
+  display: none;
+}
+
+.c0 >svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: inherit;
+}
+
+.c7 {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -50,16 +70,16 @@ exports[`<Menu /> should render 1`] = `
   height: 10rem;
 }
 
-.c5 >img {
+.c7 >img {
   max-height: 3rem;
 }
 
-.c6 {
+.c8 {
   display: flex;
   flex-flow: row wrap;
 }
 
-.c7 {
+.c9 {
   display: block;
   text-decoration: none;
   font-size: 1.6rem;
@@ -68,7 +88,7 @@ exports[`<Menu /> should render 1`] = `
   position: relative;
 }
 
-.c7::after {
+.c9::after {
   content: '';
   position: absolute;
   bottom: 0.76rem;
@@ -79,19 +99,25 @@ exports[`<Menu /> should render 1`] = `
   transition: all 300ms ease-in-out;
 }
 
-.c7:hover::after {
+.c9:hover::after {
   width: 25%;
   left: 50%;
 }
 
+.c1 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
 @media (max-width: 768px) {
-  .c0 {
+  .c2 {
     height: 100vh;
     visibility: hidden;
     opacity: 0;
   }
 
-  .c0 >.c1 {
+  .c2 >.c3 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -100,7 +126,7 @@ exports[`<Menu /> should render 1`] = `
     overflow-y: auto;
   }
 
-  .c0 {
+  .c2 {
     padding-bottom: 3.2rem;
     display: flex;
     justify-content: center;
@@ -108,36 +134,64 @@ exports[`<Menu /> should render 1`] = `
 }
 
 @media (max-width: 768px) {
-  .c3 {
+  .c5 {
     display: block;
     text-align: center;
-    padding: 4.8rem 0;
+    padding: 4.8rem;
   }
 }
 
 @media (max-width: 768px) {
-  .c6 {
+  .c0 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2.4rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .c8 {
     flex-flow: column wrap;
     align-content: center;
   }
 }
 
 <div>
-  <div
+  <button
+    aria-label="Open/Close menu"
     class="c0"
   >
+    <svg
+      aria-hidden="true"
+      aria-label="Open menu"
+      class="c1"
+      fill="currentColor"
+      focusable="false"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+      />
+    </svg>
+  </button>
+  <div
+    class="c2"
+  >
     <div
-      class="c1 c2"
+      class="c3 c4"
     >
       <h1>
         <div
-          class="c3"
+          class="c5"
         >
           <h1
-            class="c4"
+            class="c6"
           >
             <a
-              class="c5"
+              class="c7"
               href="#target"
             >
               <span>
@@ -147,10 +201,10 @@ exports[`<Menu /> should render 1`] = `
           </h1>
           <nav
             aria-label="Main menu"
-            class="c6"
+            class="c8"
           >
             <a
-              class="c7"
+              class="c9"
               href="#target1"
               target="_self"
             >
@@ -159,7 +213,7 @@ exports[`<Menu /> should render 1`] = `
               </h1>
             </a>
             <a
-              class="c7"
+              class="c9"
               href="#target2"
               target="_self"
             >
@@ -168,7 +222,7 @@ exports[`<Menu /> should render 1`] = `
               </h1>
             </a>
             <a
-              class="c7"
+              class="c9"
               href="#target3"
               target="_self"
             >
@@ -177,7 +231,7 @@ exports[`<Menu /> should render 1`] = `
               </h1>
             </a>
             <a
-              class="c7"
+              class="c9"
               href="#target4"
               target="_self"
             >
@@ -186,7 +240,7 @@ exports[`<Menu /> should render 1`] = `
               </h1>
             </a>
             <a
-              class="c7"
+              class="c9"
               href="#target5"
               target="_self"
             >
@@ -195,7 +249,7 @@ exports[`<Menu /> should render 1`] = `
               </h1>
             </a>
             <a
-              class="c7"
+              class="c9"
               href="#target6"
               target="_self"
             >
@@ -204,7 +258,7 @@ exports[`<Menu /> should render 1`] = `
               </h1>
             </a>
             <a
-              class="c7"
+              class="c9"
               href="#target7"
               target="_self"
             >
@@ -213,7 +267,7 @@ exports[`<Menu /> should render 1`] = `
               </h1>
             </a>
             <a
-              class="c7"
+              class="c9"
               href="#target8"
               target="_self"
             >
@@ -222,7 +276,7 @@ exports[`<Menu /> should render 1`] = `
               </h1>
             </a>
             <a
-              class="c7"
+              class="c9"
               href="#target9"
               target="_self"
             >
