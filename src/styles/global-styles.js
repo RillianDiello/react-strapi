@@ -16,5 +16,16 @@ export const GlobalStyle = createGlobalStyle`
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: ${({ theme }) => theme.font.family.secondary};
+    margin: ${({ theme }) => theme.spacings.large} 0;
+  }
+  p{
+    margin: ${({ theme }) => theme.spacings.large} 0;
+  }
+  ul, ol {
+    margin: ${({ theme }) => theme.spacings.large} ;
+    padding: ${({ theme }) => theme.spacings.large} ;
+  }
+  a {
+    color: ${({ theme }) => theme.colors.secondaryColor};
   }
 `;
